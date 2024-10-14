@@ -1,0 +1,55 @@
+-- Solution du Quizz sur Moodle sur les pointeurs. --
+
+-- 1
+Laquelle de ces déclarations d'un pointeur d'entier est correcte?
+a.ptr(int) ptrI;
+
+b.int *ptrI;
+
+c.int &ptrI;
+
+-- Solution
+La response est B
+Correct! L'étoile après le type indique qu'il s'agit d'un pointeur vers ce type.
+
+--2
+Après exécution des instructions suivantes, quelle affirmation est correcte?
+
+   int a = 5;
+   int* p = &a;
+   *p = 10;
+
+a.a vaut 10
+
+b.a vaut 5
+
+c.génrère une SEGFAULT
+-- Solution
+La response est A
+
+--3
+Laquelle de ces allocations de mémoire dynamique est correcte?
+Question 3Réponse
+
+a.double *bufferD = (double*)malloc(4*sizeof(double));
+
+b.double *bufferD = (double*)malloc(4);
+
+c.double *bufferD = (double*)malloc( );
+--Solution
+la response est A car
+4*sizeof(double) indique qu'il faut allouer 4 fois de la place pour un double.
+sizeof(double) donne le nombre de bytes qu'occupe un double en mémoire.
+
+--4
+Un tableau ayant été alloué dynamiquement via l'instruction suivante, que doit-on faire lorsque la programme n'a plus besoin de ce tableau?
+
+    char* tab = (char*) malloc (256*sizeof(char));
+
+a.free(*tab)
+
+b.free(tab);
+
+c.aucun traitement particulier
+--Solution
+La response est B
